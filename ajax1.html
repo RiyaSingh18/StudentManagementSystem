@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+<script>
+    function fnClick(){
+    XMLHttpRequest;
+    var o=new XMLHttpRequest();
+   
+o.open("get","https://jsonplaceholder.typicode.com/users");
+    
+o.send();
+o.onload=function()
+{
+    var res=o.responseText;
+    document.querySelector('span').innerHTML=res;
+}
+o.onerror=function(){
+    document.querySelector('span').innerHTML="can not get response"
+}
+    }
+    </script>
+</head>
+<body>
+    <input type="button"value="submit"onclick="fnClick()">
+    <span></span>
+</body>

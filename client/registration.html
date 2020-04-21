@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet"href="styles.css">
+        <script src="reg.js">
+
+        </script>
+    </head>
+    <body onload="fnBodyLoad()">
+        <p>
+     <label>name</label>  
+        <input type="text"id="name">
+    </p>
+    <p>
+        <label>rno</label>
+        <input type="text"id="rno">
+    </p>
+    <p>
+        <label>loc</label>
+        <input type="text"id="loc">
+    </p>
+    <p>
+        <label>photo</label>
+        <input type="file"onchange="fnPhotoChange()"/>
+        <img class="img-default"src="s1.jpeg "height="200"width="200">
+
+    </p>
+    <input type="button"value="Register"id="reg"onclick="fnReg()">
+    <input type="button"value="update"id="update"/>
+
+    <p>
+        <span id="tbl-data"></span>
+    </p>
+    </body>
+</html>
